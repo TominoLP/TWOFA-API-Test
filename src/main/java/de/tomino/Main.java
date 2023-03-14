@@ -52,6 +52,10 @@ public class Main {
 
         System.out.print("User: ");
         final String account = scanner.next();
+        if (!userMap.containsKey(account)) {
+            System.out.println("User does not exist.");
+            return;
+        }
 
         System.out.print("Code: ");
         final String code = scanner.next();
